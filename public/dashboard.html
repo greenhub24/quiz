@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><title>Dashboard - Quizwe</title><link rel="stylesheet" href="style.css"></head>
+<body>
+    <header><h1>🎯 Quizwe Dashboard</h1></header>
+    <div class="container">
+        <div class="card">
+            <h2 id="user-welcome"></h2>
+            <div id="user-stats" class="stats-grid"></div>
+        </div>
+        
+        <div class="card">
+            <h3>Search & Filter Quizzes</h3>
+            <input type="text" id="search" placeholder="Search quizzes..." oninput="searchQuizzes()">
+            <select id="filter-grade"><option value="">All Grades</option><option>1-5</option><option>6-8</option><option>9-12</option></select>
+            <select id="filter-level"><option value="">All Levels</option><option>Easy</option><option>Medium</option><option>Hard</option></select>
+        </div>
+        
+        <div class="card">
+            <button class="btn" onclick="window.location.href='create_quiz.html'">➕ Create New Quiz</button>
+            <button class="btn" onclick="window.location.href='join_quiz.html'">🔗 Join Quiz (Enter Code)</button>
+        </div>
+        
+        <div class="card">
+            <h3>Your Quizzes</h3>
+            <div id="quizzes-container" class="quiz-grid"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body></html>

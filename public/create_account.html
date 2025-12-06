@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head><title>Create Account - Quizwe</title><link rel="stylesheet" href="style.css"></head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Create Your Quizwe Account</h2>
+            <form id="account-form">
+                <div class="form-group">
+                    <label>Username (letters/numbers, 4-20 chars)</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label>Password (letters/numbers, 6-20 chars)</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+                <button type="button" class="btn" onclick="login()" style="background: #48bb78;">Login Instead</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body></html>

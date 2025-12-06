@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Quiz - Quizwe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>🔗 Join Quiz with Code</h1></header>
+    <div class="container">
+        <div class="card" style="max-width: 500px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <p>Enter the quiz code shared by the creator</p>
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 10px; margin: 1rem 0;">
+                    <strong>Example codes: QABC12, QXYZ99</strong>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Quiz Code</label>
+                <input type="text" id="quiz-code" placeholder="Enter 6-character code (e.g., QABC12)" required>
+            </div>
+            
+            <button class="btn" onclick="joinQuiz()" style="width: 100%; padding: 1.2rem;">🎮 Join & Play Quiz</button>
+            <button class="btn" onclick="window.location.href='dashboard.html'" style="width: 100%; background: #666;">← Back to Dashboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
